@@ -10,6 +10,7 @@ const SECTION_IDS = {
   INVADERS_SWITCH: 'invadersSwitch',
   PLAYERS: 'players',
   PROXIMITY_SWITCH: 'proximityCheckbox',
+  TIERLEVEL_SWITCH: 'tierRatingCheckbox',
   RISE_OF_FENRIS_SWITCH: 'riseOfFenrisSwitch',
   ROOT: 'root',
   SETTINGS_FORM: 'settings',
@@ -60,6 +61,10 @@ function shouldIncludeFenrisFactions() {
 
 function withProximityScores() {
   return document.getElementById(SECTION_IDS.PROXIMITY_SWITCH).checked;
+}
+
+function withTierLevels(){
+  return document.getElementById(SECTION_IDS.TIERLEVEL_SWITCH).checked;
 }
 
 function getPlayerCount() {

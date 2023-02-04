@@ -76,6 +76,19 @@ function proximityScore(faction, others) {
     );
 }
 
+function getTierLevel(selection){
+  factionCombos = selection['faction']['boardCombos']
+  board = selection['playerBoard']['label']
+
+  for (const combo of factionCombos){
+    if (combo['label'] == board){
+      return combo['tier']
+    }
+  }
+
+  return "Tier Error"
+}
+
 function getFactions(skipRiseOfFenris = false) {
   let factions = Object.values(BASE.factions).slice();
 
@@ -192,6 +205,10 @@ function pickBoards(playerCount) {
     );
     if (op) {
       selection.warn = 'OP';
+    }
+
+    if(withTierLevels()){
+      selection.tier = getTierLevel(selection)
     }
 
     out.push(selection);

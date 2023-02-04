@@ -5,30 +5,75 @@ const BASE = {
       shortName: 'Polania',
       location: 1,
       className: 'polania',
+      boardCombos: [
+        {label: 'Industrial', tier: "B"},
+        {label: 'Engineering', tier: "C"},
+        {label: 'Patriotic', tier: "B"},
+        {label: 'Mechanical', tier: "B"},
+        {label: 'Agricultural', tier: "B"},
+        {label: 'Militant', tier: "A"},
+        {label: 'Innovative', tier: "S"},
+      ]
     },
     SAXONY: {
       label: 'Saxony Empire',
       shortName: 'Saxony',
       location: 2,
       className: 'saxony',
+      boardCombos: [
+        {label: 'Industrial', tier: "A"},
+        {label: 'Engineering', tier: "F"},
+        {label: 'Patriotic', tier: "B"},
+        {label: 'Mechanical', tier: "B"},
+        {label: 'Agricultural', tier: "D"},
+        {label: 'Militant', tier: "B"},
+        {label: 'Innovative', tier: "S"},
+      ]
     },
     CRIMEA: {
       label: 'Crimean Khanate',
       shortName: 'Crimea',
       location: 3,
       className: 'crimea',
+      boardCombos: [
+        {label: 'Industrial', tier: "A"},
+        {label: 'Engineering', tier: "A"},
+        {label: 'Patriotic', tier: "SS"},
+        {label: 'Mechanical', tier: "S"},
+        {label: 'Agricultural', tier: "A"},
+        {label: 'Militant', tier: "SS"},
+        {label: 'Innovative', tier: "SS"},
+      ]
     },
     RUSVIET: {
       label: 'Rusviet Union',
       shortName: 'Rusviet',
       location: 5,
       className: 'rusviet',
+      boardCombos: [
+        {label: 'Industrial', tier: "S"},
+        {label: 'Engineering', tier: "A"},
+        {label: 'Patriotic', tier: "A"},
+        {label: 'Mechanical', tier: "S"},
+        {label: 'Agricultural', tier: "A"},
+        {label: 'Militant', tier: "SS"},
+        {label: 'Innovative', tier: "SS"},
+      ]
     },
     NORDIC: {
       label: 'Nordic Kingdom',
       shortName: 'Nordic',
       location: 6,
       className: 'nordic',
+      boardCombos: [
+        {label: 'Industrial', tier: "B"},
+        {label: 'Engineering', tier: "B"},
+        {label: 'Patriotic', tier: "C"},
+        {label: 'Mechanical', tier: "B"},
+        {label: 'Agricultural', tier: "C"},
+        {label: 'Militant', tier: "C"},
+        {label: 'Innovative', tier: "B"},
+      ]
     },
   },
 
@@ -57,12 +102,30 @@ const INVADERS_FROM_AFAR = {
       shortName: 'Togawa',
       location: 4,
       className: 'togawa',
+      boardCombos: [
+        {label: 'Industrial', tier: "D"},
+        {label: 'Engineering', tier: "C"},
+        {label: 'Patriotic', tier: "C"},
+        {label: 'Mechanical', tier: "F"},
+        {label: 'Agricultural', tier: "B"},
+        {label: 'Militant', tier: "C"},
+        {label: 'Innovative', tier: "B"},
+      ]
     },
     ALBION: {
       label: 'Clan Albion',
       shortName: 'Albion',
       location: 7,
       className: 'albion',
+      boardCombos: [
+        {label: 'Industrial', tier: "F"},
+        {label: 'Engineering', tier: "D"},
+        {label: 'Patriotic', tier: "C"},
+        {label: 'Mechanical', tier: "D"},
+        {label: 'Agricultural', tier: "C"},
+        {label: 'Militant', tier: "B"},
+        {label: 'Innovative', tier: "C"},
+      ]
     },
   },
 

@@ -92,6 +92,14 @@ function renderProximity(proximity) {
   return elem;
 }
 
+function renderTierLevel(level){
+  const elem = document.createElement('span');
+  elem.className = 'proximity';
+  elem.textContent =
+    '\xA0(' + level + ')';
+  return elem;
+}
+
 function renderWarning() {
   const elem = document.createElement('span');
   elem.textContent = '⚠️';
@@ -160,6 +168,10 @@ function renderBoardSelection(selection) {
     elem.appendChild(renderProximity(selection.proximity));
   }
 
+  if (!!selection.tier){
+    elem.appendChild(renderTierLevel(selection.tier));
+  }
+  
   return elem;
 }
 
